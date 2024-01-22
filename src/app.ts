@@ -111,7 +111,7 @@ export const initApp = async (
         res.sendStatus(200);
     });
 
-    app.get('/hi', (req, res) => {
+    app.get('/', (req, res) => {
         const s = asl.getStore();
         s?.logger.info('hi');
         res.send('hi');
